@@ -5,6 +5,8 @@
     --background-color: #FFFFFF;
     --footer-contact-text: #FFFFFF99;
     --button-fiter-background: #F5F4FA;
+    --footer-background : #2F303A;
+    --logo-black: #000000;
 }
 
 .visually-hidden {
@@ -21,12 +23,17 @@
 }
 
 
-.page {
+body {
     background: var(--background-color);
     color: var(--main-text-color);
 
-    font-family: roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
+}
+
+
+a{
+    text-decoration-line: none;
 }
 
 ul {
@@ -37,20 +44,20 @@ ul {
 .logo {
     color: var(--accent-color);
 
-    font-family: raleway, sans-serif;
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;     
 }
 
 .logo-studio {
-    color: #000000;
+    color: var(--logo-black);
 }
 
 .site-nav .link {
     color: var(--title-text-color);
 
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -83,7 +90,7 @@ color: var(--accent-color);
 /**hero */
 .hero-title {
     color: var(--background-color);
-    background-color: #2F303A;
+    background-color: var(--footer-background);
 
     font-weight: 900;
     font-size: 44px;
@@ -103,14 +110,14 @@ color: var(--accent-color);
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
 }
 
 /**переваги */
 .section-caption {
     color: var(--title-text-color);
 
-
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
 }
@@ -125,9 +132,8 @@ color: var(--accent-color);
 .section-title {
     color: var(--title-text-color);
 
-    font-weight: 700;
     font-size: 36px;
-    line-height: 1,16;
+    line-height: 1.16;
 
 }
 /**список команди */
@@ -136,19 +142,19 @@ color: var(--accent-color);
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,18;
+    line-height: 1.18;
 }
 
 /**спеціальність команди */
 .section-subtitle {
 
     font-size: 16px;
-    line-height: 1,18;
+    line-height: 1.18;
 }
 
 /**footer */
 footer {
-    background: #2F303A;
+    background: var(--footer-background);
 }
 
 footer > a > .logo-studio {
@@ -160,7 +166,7 @@ footer > a > .logo-studio {
 
     font-style: normal;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
 }
 
 .footer-contact {
@@ -168,7 +174,7 @@ footer > a > .logo-studio {
 
     font-style: normal;
     font-size: 14px;
-    line-height: 1,71;
+    line-height: 1.71;
 }
 
 footer a:hover, footer a:focus {
@@ -196,7 +202,6 @@ footer a:hover, footer a:focus {
 .portfolio-title {
     color: var(--title-text-color);
 
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
